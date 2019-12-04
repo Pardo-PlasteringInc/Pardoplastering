@@ -1,0 +1,370 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.texto-morado {
+    font-weight: 300;
+    color: purple;
+}
+
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-light: #531253;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+    
+}
+
+
+
+body {
+    font-size: 20px;
+    font-family: 'Open Sams', sans-serif;
+}
+p {
+    font-size: 22px;
+}
+
+/*-----Clases de fullpage.js------*/
+#fp-nav ul li a span {
+    background: orange;
+}
+#fp-nav ul li .fp-tooltip {
+    color: orange;
+}
+/*------menu de navegaccion-----*/
+.nav {
+    position: fixed;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px;
+}
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+.menu .li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;    
+}
+.menu li.active a,
+.menu li.hover a {
+    color: orange;
+}
+
+/*--------Header-----------*/
+.header {
+    background: url('this-comic-from-1919-imagines-what-it-s-like-to-have-a-phone-in-your-pocket-1-188');
+    background-position: center;
+    background-size: 100%;
+}
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.header .titulo {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.header .contenedor-icono {
+    position: absolute;
+    color: seashell;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 100px;
+    animation: bajar-subir 1s ease infinite;
+}
+/* Services */
+.services {
+    background: url('');
+    background-position: center;
+    background-size: 100%;
+}
+.nosostros {
+    margin-bottom: 60px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: var(--purple-dark);
+    font-family: 'noto serif', serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.subtitulo span {
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+.subtitulo::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--purple-dark);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+/* Galeria */
+.galeria {
+    margin-bottom: 60px;
+}
+.galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Clases de fullpage.js  flechas de Slide */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #000 transparent transparent;
+    animation: bajar-subir 1s ease infinite;
+
+}
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent  transparent transparent #520652;
+    animation: bajar-subir 1s ease infinite;
+
+}
+/*------------Productos-------------*/
+.productos {
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.productos .titulo {
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.productos .producto {
+    position: relative;
+    width: 100%;
+}
+.productos .overlay {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--purple-light);
+    overflow: hidden;
+    transition: .5s ease;
+}
+.productos .producto:hover .overlay {
+    width: 100%;
+    opacity: .8;
+}
+.productos .producto .overlay-texto {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(--white);
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+   
+}
+.productos .btn-productos {
+    background-color: var(--purple-light);
+    color: #fff;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+.productos .btn-productos:hover {
+    background: transparent;
+    border: 2px solid var(--purple-light);
+    color: var(--purple-light);
+} 
+
+
+
+
+/*----------ANIMACION----------*/
+@keyframes bajar-subir {
+    0% { transform: translateY(20px);}
+    25% { transform: translateY(0);}
+    100% { transform: translateY(20px);}
+}
+/* ---------formulario
+body, html {
+    height: 100%;
+}
+body.form {
+    margin: 0;
+    padding: 0;
+    background: #2f3542;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.form-box {
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+}
+.form-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.form-box input[type="text"],
+.form-box input[type="text"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #3742fa;
+    width: 400px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0 25s;
+}
+textarea {    
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #3742fa;
+    width: 400px;
+    height: 100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0 25s;
+
+}
+.form-box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #3742fa;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0 25s;
+}
+.form-box input[type="reset"] {
+    border: 0;
+    background: none;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #3742fa;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0 25s;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus {
+    width: 280px;
+    border-color: #ffffff;
+}
+.form-box input [type="submit"] {
+    border: 0;
+    background: #5352ed;
+    cursor: pointer;
+    border: 2px solid #3742fa;
+}
+.form-box button[type="submit"]:hover {
+    background: none;
+}
+a.link {
+    display: inline;
+    color:var(--purple-dark);
+    top: 50%;
+    right:100%;
+
+}
+a.return {
+    color: whitesmoke;
+    
+} */
