@@ -22,7 +22,7 @@ const seccionesPagina = new fullpage('#fullpage', {
 	// ──────────────────────────────────────────────────
 	//   :::::: Secciones
 	// ──────────────────────────────────────────────────
-    sectionsColor : ['#000', '#A9A9A9', '#A9A9A9'], // Color de fondo de cada seccion.
+    sectionsColor : ['#170312', '#A9A9A9', '#A9A9A9'], // Color de fondo de cada seccion.
     verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
 
 });
