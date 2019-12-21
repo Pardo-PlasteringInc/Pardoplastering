@@ -175,14 +175,14 @@ p {
 .fp-controlArrow.fp-prev {
     left: 80%;
     border-width: 20px 20px 20px 0;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #000 transparent transparent ;
     animation: bajar-subir 1s ease infinite;
 
 }
 .fp-controlArrow.fp-next {
     right: 50px;
     border-width: 20px 0 20px 20px;
-    border-color: transparent  transparent transparent #520652;
+    border-color: transparent  transparent transparent #000;
     animation: bajar-subir 1s ease infinite;
 
 }
